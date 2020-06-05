@@ -1,0 +1,38 @@
+h1 {
+    font-family: 'Quasimoda';
+    display: inline-block;
+    font-weight: 700;
+    font-size: 4em;
+    color: var(--dark);
+    align-self: left;
+}
+<style>/* Rotating Text CSS */
+    .rotating-text {
+        overflow: hidden;
+    }
+
+    .rotating-text h1 {
+        display: inline-flex;
+        margin: 0;
+        vertical-align: top;
+    }
+    .rotating-text h1 .word {
+        position: absolute;
+        display: flex;
+        opacity: 0;
+        overflow: hidden;
+        padding-bottom: 0.12em;
+    }
+    .rotating-text h1 .word .letter {
+        transform-origin: center center 0.8em;
+    }
+    .rotating-text h1 .word .letter.out {
+        transform: rotateX(90deg);
+        transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+    }
+    .rotating-text h1 .word .letter.in {
+        transition: 0.32s ease;
+    }
+    .rotating-text h1 .word .letter.behind {
+        transform: rotateX(-90deg);
+    }</style>
