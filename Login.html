@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Protests.Me</title>
+    <link href="https://cdn.jsdelivr.net/gh/LeifMessinger/lQuery@latest/extras/RotatingText/rotating-text.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  input[type=text] {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat';
+
+
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+img {
+  float: right;
+  margin-left: 15px;
+  margin-top: -120px;
+}
+</style>
+
+  </head>
+  <body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" >Protests.Me</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+
+      <li><a href="login.html">Login</a></li>
+   
+     
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h2 style="text-align: center">Login</h2>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email" >Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+
+
+  
+    <!--<script src="https://cdn.jsdelivr.net/gh/LeifMessinger/lQuery@latest/extras/RotatingText/rotating-text.min.js"></script>-->
+    <script>// Rotating Text credit to alphardex
+  var words = document.querySelectorAll(".word");
+  words.forEach(function(word) {
+    var letters = word.textContent.split("");
+    word.textContent = "";
+    letters.forEach(function(letter) {
+      var span = document.createElement("span");
+      if(word.getAttribute("color")) span.style.setProperty("color",word.getAttribute("color"));
+      if (letter == " ") {
+        span.textContent = " ";
+        span.className = "letter";
+        word.append(span);
+      } else {
+        span.textContent = letter;
+        span.className = "letter";
+        word.append(span);
+      }
+    });
+  });
+  var currentWordIndex = 0;
+  var maxWordIndex = words.length - 1;
+  words[currentWordIndex].style.opacity = "1";
+  var rotateText = function() {
+    var currentWord = words[currentWordIndex];
+    var nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+    // rotate out letters of current word
+    Array.from(currentWord.children).forEach(function(letter, i) {
+      setTimeout(function() {
+        letter.className = "letter out";
+      }, i * 40);
+    });
+    // reveal and rotate in letters of next word
+    nextWord.style.opacity = "1";
+    Array.from(nextWord.children).forEach(function(letter, i) {
+      letter.className = "letter behind";
+      setTimeout(function() {
+        letter.className = "letter in";
+      }, 500 + i * 20);
+    });
+    currentWordIndex =
+      currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+  };
+  setTimeout(rotateText, 1000);
+  setInterval(rotateText, 3000);</script>
+  </body>
+</html>
