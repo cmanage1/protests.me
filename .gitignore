@@ -2,6 +2,5 @@
 node_modules
 privateinfo.js
 functions/*
-bower_components/
 .firebase
 public/firebase.js
