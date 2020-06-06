@@ -41,7 +41,6 @@ form.onsubmit= function(e) {
 
     var docRef = db.collection("protests").doc('xIuT8WaGHoAwI21UFIUL');
 
-
     // Valid options for source are 'server', 'cache', or
     // 'default'. See https://firebase.google.com/docs/reference/js/firebase.firestore.GetOptions
     // for more information.
