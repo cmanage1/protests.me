@@ -28,9 +28,9 @@
             firebase.auth.PhoneAuthProvider.PROVIDER_ID
         ],
         // Terms of service url.
-        tosUrl: 'index.html',
+        tosUrl: 'terms.html',
         // Privacy policy url.
-        privacyPolicyUrl: 'index.html'
+        privacyPolicyUrl: 'privacy_policy.html'
         };
         // The start method will wait until the DOM is loaded.
     ui.start('#firebaseui-auth-container', uiConfig);
