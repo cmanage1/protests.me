@@ -16,7 +16,7 @@ private.db.collection("protests").add({
         console.error("Error adding document: ", error);
 });
 
-
+//ideally I wanted to get the most recent document, but since I don't know that I just slammed in a index.html
 var docRef = db.collection("protests").doc(index.html);
 
 // Valid options for source are 'server', 'cache', or
@@ -33,4 +33,10 @@ docRef.get(getOptions).then(function(doc) {
     console.log("Cached document data:", doc.data());
 }).catch(function(error) {
     console.log("Error getting cached document:", error);
+});
+//deleting document
+db.collection("protests").doc(/*identify the doc you wanna delete somehow*/).delete().then(function() {
+    console.log("Document successfully deleted!");
+}).catch(function(error) {
+    console.error("Error removing document: ", error);
 });
