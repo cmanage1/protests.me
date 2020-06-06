@@ -7,9 +7,12 @@ body {
 
 .page{
 	padding: 2rem;
-	padding-top: 0rem;
+	padding-top: 0.5rem;
 }
 
+::placeholder{
+	color: red;
+}
 
 @keyframes gradient {
 	0% {

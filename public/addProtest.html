@@ -7,12 +7,18 @@
     <link href="https://cdn.jsdelivr.net/gh/LeifMessinger/lQuery@latest/extras/RotatingText/rotating-text.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'> <style type="text/css">
-<style>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'> 
+    
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+  <script src="firebase.js"></script>
+  
+  <style type="text/css">
+  
 .form-style-8{
   font-family: 'Open Sans Condensed', arial, sans;
   width: 500px;
@@ -85,6 +91,7 @@
   background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
   background-color:#34CACA;
 }
+
 body {
     font-family: 'Montserrat';
 
@@ -126,8 +133,7 @@ img {
       <li class="active"><a href="index.html">Home</a></li>
 
       <li><a href="Login.html">Login</a></li>
-      
- 
+    
     
     </ul>
   </div>
@@ -138,24 +144,26 @@ img {
 <div class="form-style-8">
   <h2 style="text-align: center">Protest Submission</h2>
   <form>
-    <input type="text" name="field1" placeholder="Title" />
-    <input type="text" name="field2" placeholder="Location" />
-    <input type="date" name="field2" placeholder="Date" />
-   <input type="text" name="field2" placeholder="Number of Participants" />
-   <input type="text" name="field2" placeholder="Location" />
+    <input type="text" name="field1" id="title" placeholder="Title" />
+    <input type="text" name="field2" id="location" placeholder="Location" />
+    <input type="date" name="field2" id="data" placeholder="Date" />
+   <input type="text" name="field2" id="numberOfParticipants" placeholder="Number of Participants" />
+   <input type="text" name="field2" id="description" placeholder="Description" />
 
-    <input type="button" value="Submit" />
+    <input type="submit" value="Submit" onclick="getInfo()" >
+    <input type="reset" class="resetbtn">
   </form>
 </div>
 
+  <script src="addProtest.js"></script>
+  <script >
 
-<script type="text/javascript">
-
-function adjust_textarea(h) {
-    h.style.height = "20px";
-    h.style.height = (h.scrollHeight)+"px";
-}
-</script>
-
+  function adjust_textarea(h) {
+      h.style.height = "20px";
+      h.style.height = (h.scrollHeight)+"px";
+  }
+  </script>
+    
+  
   </body>
 </html>

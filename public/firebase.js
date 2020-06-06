@@ -1,6 +1,7 @@
-var app_fireBase = {};
+var app_firebase = {};
 
-(function(){
+
+( function (){
     var firebaseConfig = {
         apiKey: "AIzaSyCj7mkuwUwj9N8o1LYjOy5q5_Sii52ven4",
         authDomain: "protestsdotme.firebaseapp.com",
@@ -13,5 +14,5 @@ var app_fireBase = {};
     };
 
     firebase.initializeApp(firebaseConfig);
-})()
-
+    app_firebase= firebase;
+})() 

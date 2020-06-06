@@ -6,52 +6,46 @@
     <title>Protests.Me</title>
     <link href="https://cdn.jsdelivr.net/gh/LeifMessinger/lQuery@latest/extras/RotatingText/rotating-text.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-   
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.15.0/firebase-app.js"></script>
     
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
-  <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
   
   </head>
   <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Protests.Me</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">Home</a></li>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Protests.Me</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
 
-      <li><a href="login.html">Login</a></li>
+          <li><a href="login.html">Login</a></li>
 
-    </ul>
-  </div>
-</nav>
+        </ul>
+      </div>
+    </nav>
+    <div class="page">
 
-
-
-  <div class="page">
-
-    <div class = "rotating-text" style="margin-top: 20%;">
-    <h1 class = "mobile-hide" style="font-size: 45px; color: white">We are </h1>
-    <h1>
-            <span class = "word col1" color = "yellow" style="font-size: 45px;">Protests.Me</span>
-            <span class = "word col2" color = "orange"style="font-size: 45px">bringing Awareness.</span>
-            <span class = "word col3" color = "limegreen"style="font-size: 45px">giving you a voice.</span>
-            <span class = "word col4" color = "mediumblue"style="font-size: 45px">supporting the community.</span>
-            <p><img src="../assets/images/logo.png"  style="margin-left:600px; margin-top: 1px">
-        </h1>
-    </div>
-    </div>
+      <div class = "rotating-text" style="margin-top: 20%;">
+      <h1 class = "mobile-hide" style="font-size: 45px; color: white">We are </h1>
+      <h1>
+              <span class = "word col1" color = "yellow" style="font-size: 45px;">Protests.Me</span>
+              <span class = "word col2" color = "orange"style="font-size: 45px">bringing Awareness.</span>
+              <span class = "word col3" color = "limegreen"style="font-size: 45px">giving you a voice.</span>
+              <span class = "word col4" color = "mediumblue"style="font-size: 45px">supporting the community.</span>
+              <p><img src="images/logo.png"  style="margin-left:600px; margin-top: 1px">
+          </h1>
+      </div>
+      </div>
     <!--<script src="https://cdn.jsdelivr.net/gh/LeifMessinger/lQuery@latest/extras/RotatingText/rotating-text.min.js"></script>-->
     <script>// Rotating Text credit to alphardex
   var words = document.querySelectorAll(".word");
@@ -96,19 +90,11 @@
       currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
   };
   setTimeout(rotateText, 1000);
-  setInterval(rotateText, 3000);</script>
+    setInterval(rotateText, 3000);
+    </script>
 
  
-  
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-       https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/7.15.0/firebase-analytics.js"></script>
-  <script src="/__/firebasejs/7.15.0/firebase-firestore.js"></script>
-  <script src="/__/firebase/7.15.0/firebase-auth.js"></script>
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
-  <script src= "firebase.js"></script>
-  <script src="index.js"></script>
+  <script src="firebase.js"></script>
 
-</body>
+  </body>
 </html>
