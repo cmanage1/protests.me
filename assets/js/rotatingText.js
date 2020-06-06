@@ -6,7 +6,7 @@
     letters.forEach(function(letter) {
       var span = document.createElement("span");
       if(word.getAttribute("color")) span.style.setProperty("color",word.getAttribute("color"));
-      if (letter == " ") {
+      if (letter === " ") {
         span.textContent = " ";
         span.className = "letter";
         word.append(span);
