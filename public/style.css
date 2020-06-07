@@ -24,7 +24,7 @@ footer{
 	padding-top: 0.5rem;
 }
 ::placeholder{
-	color: red;
+	color: #808080;
 }
 
 .login-prompt{
