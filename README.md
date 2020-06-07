@@ -7,7 +7,7 @@ Frontend
 * HTML/CSS
 * Bootstrap
 
-Backend & Deployement
+Backend/DevOps
 * Node.js
 * Firebase Deployement
 * Firebase Authentication
