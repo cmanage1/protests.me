@@ -2,6 +2,8 @@
 
 Created for HackTheNorthEast 2020 Hackathon
 
+[Devpost](https://devpost.com/software/protest-app)
+
 ## Stack
 
 Frontend
@@ -15,4 +17,4 @@ Backend/DevOps
 * Firebase Authentication
 * Firestore Database
 
-[Devpost](https://devpost.com/software/protest-app)
+
