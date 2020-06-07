@@ -3,11 +3,10 @@ body {
 	background: #121212;
 	background-size: 400% 400%;
 }
-.footer{
+footer{
     background-color: whitesmoke;
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 6px;
+    padding: 5rem;
 }
 .on-dark-backgrounds{
     color: whitesmoke;
@@ -37,19 +36,20 @@ body {
 	}
 }
 
-img {
-  margin-left: 15px;
-  margin-top: -120px;
-}
+
 
 .small-logo{
 	float: right;
 	margin-top: -50px;
+	margin-left: 600px; 
+	margin-top: 1px; 
+	width: 50px; 
+	height: auto;
 }
 
 .main-index-logo{
-	display: block;
-	float: right;
+	padding: 2rem;
+	margin-left: 50rem;	
 }
 
 
@@ -66,27 +66,23 @@ img {
 		width: 25%;
 	}
 	
-	
 	span{
-		font-size: 25px;
+		font-size: 21px;
 	}
 
 	.small-logo{
-		margin-right: 1rem;
-		margin-top: -220px
+		margin-left: 0px;
 	}
 
-	img{
-		display: block;
-	}
 	.main-index-logo{
 		margin-top: 10px;
 		margin-bottom:7rem;
-		display: block;
-		width: 50%;
+		width: 70%;
+		height: auto;
+		margin-left: 0rem;
 	}
 
 	footer{
-		margin-bottom: 0;
+		padding: 5rem;
 	}
 }
