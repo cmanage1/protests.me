@@ -11,6 +11,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+  
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+  
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
 <style>
 body {
     font-family: 'Montserrat';
@@ -121,9 +131,21 @@ img {
 
   </div>
 </div>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyCj7mkuwUwj9N8o1LYjOy5q5_Sii52ven4",
+      authDomain: "protestsdotme.firebaseapp.com",
+      databaseURL: "https://protestsdotme.firebaseio.com",
+      projectId: "protestsdotme",
+      storageBucket: "protestsdotme.appspot.com",
+      messagingSenderId: "1063088080451",
+      appId: "1:1063088080451:web:3d494f906c07548e35f6f6",
+      measurementId: "G-QZ0X6BK3L8"
+    };
 
-
-
-
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="profile.js"></script>
+  
   </body>
 </html>
