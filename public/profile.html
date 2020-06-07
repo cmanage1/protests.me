@@ -11,7 +11,19 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<style>
+  <link rel="style" href="style.css">
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+  
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+  
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+  <style type="text/css">
+
 body {
     font-family: 'Montserrat';
 
@@ -64,6 +76,8 @@ img {
   width: 150px;
 
 }
+
+
 </style>
 
   </head>
@@ -80,7 +94,7 @@ img {
 
       <li><a href="Login.html">Login</a></li>
       
-      <div style = "float:right">
+      <div style = "float:right;">
       <a href="#"><i class="fa fa-fw fa-search"></i> </a> 
       <a href="#"><i class="fa fa-fw fa-envelope"></i> </a> 
       <a href="#"><i class="fa fa-fw fa-user"></i> </a>
@@ -90,24 +104,58 @@ img {
   </div>
 </nav>
 
-<div class="split left">
+<div class="split left" >
 
 <a class="navbar-brand" href="index.html" style="color:white; margin-top: -20px">Protests.Me</a>
 
   <h2 style="margin-top: 20px">Current Protests</h2>
+  <div class="container">
+    <div id="output"> </div>
+  </div>
 
-  <p> <img src="images/map1.png" alt="" class = "centered"style="width:400px;height:400px; margin-top: 50px;border-radius: 20%; align-self: center "> Anaheim Convention Center</p>
-  <p>Time: 3:00 pm Pacific Standard Time (PST)</p>
-  <p> Sunday June 7th </p>
+
+  <div class="existing-post" style="margin-left: 2rem; margin-top: 5rem;" >
+    <p> Your existing protests</p>
+    <ul>
+      <li> Anaheim Protest </li>
+      <li> 2020-06-07 </li>
+      <li> Anaheim Convention Center </li>
+      <li> 40 people </li>
+      <li> Time: 3:00 pm (PST)</li>
+    </ul>
+
+    <ul style="margin-top: 5rem;">
+      <li> New York Protest </li>
+      <li> 2020-06-12 </li>
+      <li> Central park </li>
+      <li> 700 people </li>
+      <li> Time: 1:00 pm (EST)</li>
+    </ul>
+
+    <ul style="margin-top: 5rem;">
+      <li> Houstan Protest </li>
+      <li> 2020-06-10 </li>
+      <li> 1000 Main St. Art Blocks, Houstan, Texas </li>
+      <li> 120 people </li>
+      <li> Time: 2:00 pm (CST)</li>
+    </ul>
+    
+    
+    <p style="margin-left: 1rem"> <img src="images/map1.png" alt="" class="centered"
+        style="width:400px;height:400px;  margin-top: 50px;border-radius: 20%; align-self: center "></p>
+    <p style="margin-left: 1rem"></p>
+    <p style="margin-left: 1rem"> </p>
+  </div>
+  
 </div>
  
 <div class="split right">
-        <div style = "float:right">
+        <div style = "float:right ; margin-right: 1rem;">
 
       <a href="addProtest.html"><i class="fa fa-plus" ></i> </a> 
       <a href="#"><i class="fa fa-fw fa-search"></i> </a> 
       <a href="#"><i class="fa fa-fw fa-envelope"></i> </a> 
-      <a href="#"><i class="fa fa-fw fa-user"></i> </a>
+      <a href="profile.html"><i class="fa fa-fw fa-user"></i> </a>
 
       <a href="index.html"><span class="glyphicon glyphicon-log-out"></span></a>
      </div>
@@ -121,9 +169,21 @@ img {
 
   </div>
 </div>
+  <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCj7mkuwUwj9N8o1LYjOy5q5_Sii52ven4",
+        authDomain: "protestsdotme.firebaseapp.com",
+        databaseURL: "https://protestsdotme.firebaseio.com",
+        projectId: "protestsdotme",
+        storageBucket: "protestsdotme.appspot.com",
+        messagingSenderId: "1063088080451",
+        appId: "1:1063088080451:web:3d494f906c07548e35f6f6",
+        measurementId: "G-QZ0X6BK3L8"
+      };
 
-
-
+      firebase.initializeApp(firebaseConfig);
+  </script>
+<script src="profile.js"></script>
 
   </body>
 </html>

@@ -17,22 +17,24 @@ form.onsubmit= function(e) {
 
 
     var db = firebase.firestore();
+    var result;
 
+    //Have to change code so each user will have their own database collection
+    var docRef = db.collection("jane-protests").doc("example-protest");
+    
     //WRITE TO DATABASE
-    db.collection("protests").add({
+   docRef.set({
         title: title,
         location: place,
         date: date,
         numParticipants: participants,
         description: description,
-        
-    }).then(function (docRef) {
-        console.log("Document written with ID: ", docRef.id);
+    }).then(function () {
+        console.log("Document written With ID: ", docRef.id);
+        window.location.href = "profile.html";
     }).catch(function (error) {
         console.error("Error adding document: ", error);
     });
-
-    window.location.href = "profile.html";
 
 
 }
