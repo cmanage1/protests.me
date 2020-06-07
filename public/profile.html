@@ -60,12 +60,15 @@ img {
 
 .left {
   left: 0;
-  background-color: green;
+  background-color: black;
+  color: #f29000;
 }
 
 .right {
   right: 0;
-  background-color: red;
+  background-color: #f8f8f8;
+  color: black;
+
 }
 
 .centered {
@@ -107,7 +110,10 @@ img {
 </nav>
 
 <div class="split left">
-  <h2>Current Protests</h2>
+
+<a class="navbar-brand" href="index.html" style="color:white; margin-top: -20px">Protests.Me</a>
+
+  <h2 style="margin-top: 20px">Current Protests</h2>
 
   <p> <img src="map1.png" alt="" style="width:400px;height:400px; margin-top: 10px;border-radius: 20%; margin-left: -20px "> hi</p>
 </div>
@@ -115,6 +121,7 @@ img {
 <div class="split right">
         <div style = "float:right">
 
+      <a href="addProtest.html"><i class="fa fa-plus"></i> </a> 
       <a href="#"><i class="fa fa-fw fa-search"></i> </a> 
       <a href="#"><i class="fa fa-fw fa-envelope"></i> </a> 
       <a href="#"><i class="fa fa-fw fa-user"></i> </a>
@@ -123,7 +130,7 @@ img {
      </div>
   <div class="centered">
 
-     <img src="images/jane.jpg" alt="">
+     <img src="images/jane.jpg" alt="" style="margin-left: -220px">
      <h2>Jane Doe</h2>
 
     <p>Based in Los Angeles, California</p>
