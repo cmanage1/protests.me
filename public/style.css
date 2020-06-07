@@ -6,7 +6,8 @@ body {
 .footer{
     background-color: whitesmoke;
     text-align: center;
-    padding: 50px 200px;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
 .on-dark-backgrounds{
     color: whitesmoke;
