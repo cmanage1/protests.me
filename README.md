@@ -11,4 +11,4 @@ Backend/DevOps
 * Node.js
 * Firebase Deployement
 * Firebase Authentication
-* Firestore Database)
+* Firestore Database
