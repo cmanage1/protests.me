@@ -11,38 +11,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
-  
-  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
-  
-  <!-- Add Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
 <style>
 body {
     font-family: 'Montserrat';
 
 
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+
 img {
   float: right;
   margin-left: 15px;
@@ -69,6 +49,7 @@ img {
   background-color: #f8f8f8;
   color: black;
 
+
 }
 
 .centered {
@@ -81,7 +62,7 @@ img {
 
 .centered img {
   width: 150px;
-  border-radius: 50%;
+
 }
 </style>
 
@@ -115,13 +96,15 @@ img {
 
   <h2 style="margin-top: 20px">Current Protests</h2>
 
-  <p> <img src="map1.png" alt="" style="width:400px;height:400px; margin-top: 10px;border-radius: 20%; margin-left: -20px "> hi</p>
+  <p> <img src="images/map1.png" alt="" class = "centered"style="width:400px;height:400px; margin-top: 50px;border-radius: 20%; align-self: center "> Anaheim Convention Center</p>
+  <p>Time: 3:00 pm Pacific Standard Time (PST)</p>
+  <p> Sunday June 7th </p>
 </div>
  
 <div class="split right">
         <div style = "float:right">
 
-      <a href="addProtest.html"><i class="fa fa-plus"></i> </a> 
+      <a href="addProtest.html"><i class="fa fa-plus" ></i> </a> 
       <a href="#"><i class="fa fa-fw fa-search"></i> </a> 
       <a href="#"><i class="fa fa-fw fa-envelope"></i> </a> 
       <a href="#"><i class="fa fa-fw fa-user"></i> </a>
@@ -130,7 +113,7 @@ img {
      </div>
   <div class="centered">
 
-     <img src="images/jane.jpg" alt="" style="margin-left: -220px">
+     <img src="images/jane.jpg" alt="" style="margin-left: -220px; border-radius: 50%; margin-right: 35px; margin-top: -150px">
      <h2>Jane Doe</h2>
 
     <p>Based in Los Angeles, California</p>
@@ -138,21 +121,9 @@ img {
 
   </div>
 </div>
-  <script>
-    var firebaseConfig = {
-      apiKey: "AIzaSyCj7mkuwUwj9N8o1LYjOy5q5_Sii52ven4",
-      authDomain: "protestsdotme.firebaseapp.com",
-      databaseURL: "https://protestsdotme.firebaseio.com",
-      projectId: "protestsdotme",
-      storageBucket: "protestsdotme.appspot.com",
-      messagingSenderId: "1063088080451",
-      appId: "1:1063088080451:web:3d494f906c07548e35f6f6",
-      measurementId: "G-QZ0X6BK3L8"
-    };
 
-    firebase.initializeApp(firebaseConfig);
-  </script>
-  <script src="profile.js"></script>
-  
+
+
+
   </body>
 </html>
