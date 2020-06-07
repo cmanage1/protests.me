@@ -36,11 +36,22 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
 img {
-  float: right;
   margin-left: 15px;
   margin-top: -120px;
 }
+
+.small-logo{
+	float: right;
+	margin-top: -50px;
+}
+
+.main-index-logo{
+	float: right;
+}
+
+
 
 @media (max-width: 56.25em){
 	body{
@@ -50,12 +61,30 @@ img {
         background-attachment: fixed;
 	}
 
-	.mobile-hide h1{
-		font-size: 2px;
-		width: 10%;
-		
+	.rotating-text{
+		width: 50%;
 	}
+	
+	span{
+		font-size: 25px;
+	}
+
+	.small-logo{
+		margin-right: 1rem;
+		margin-top: -220px
+	}
+
 	img{
 		display: block;
+	}
+	.main-index-logo{
+		margin-top: 10px;
+		margin-bottom:7rem;
+		display: block;
+		width: 50%;
+	}
+
+	footer{
+		margin-bottom: 0;
 	}
 }
