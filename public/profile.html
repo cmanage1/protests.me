@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Protests.Me</title>
+    <link href="https://cdn.jsdelivr.net/gh/LeifMessinger/lQuery@latest/extras/RotatingText/rotating-text.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+    font-family: 'Montserrat';
+
+
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+img {
+  float: right;
+  margin-left: 15px;
+  margin-top: -120px;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: green;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+
+  </head>
+  <body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" >Protests.Me</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+
+      <li><a href="Login.html">Login</a></li>
+      
+      <div style = "float:right">
+      <a href="#"><i class="fa fa-fw fa-search"></i> </a> 
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> </a> 
+      <a href="#"><i class="fa fa-fw fa-user"></i> </a>
+     </div>
+    
+    </ul>
+  </div>
+</nav>
+
+<div class="split left">
+  <h2>Current Protests</h2>
+
+  <p> <img src="map1.png" alt="" style="width:400px;height:400px; margin-top: 10px;border-radius: 20%; margin-left: -20px "> hi</p>
+</div>
+ 
+<div class="split right">
+        <div style = "float:right">
+
+      <a href="#"><i class="fa fa-fw fa-search"></i> </a> 
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> </a> 
+      <a href="#"><i class="fa fa-fw fa-user"></i> </a>
+
+      <a href="index.html"><span class="glyphicon glyphicon-log-out"></span></a>
+     </div>
+  <div class="centered">
+
+     <img src="images/jane.jpg" alt="">
+     <h2>Jane Doe</h2>
+
+    <p>Based in Los Angeles, California</p>
+    <p>Verified User</p>
+
+  </div>
+</div>
+
+
+
+
+  </body>
+</html>
