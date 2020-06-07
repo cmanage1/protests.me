@@ -1,5 +1,14 @@
 # ProtestApp
 
-Stack:
-Frontend: JavaScript, HTML/CSS
-Backend: Node.js, Google Firebase(Auth, Firestore Database)
+##Stack
+
+Frontend
+*JavaScript
+*HTML/CSS
+*Bootstrap
+
+Backend & Deployement
+*Node.js
+*Firebase Deployement
+*Firebase Authentication
+*Firestore Database)
