@@ -9,9 +9,12 @@ footer{
     padding: 5rem;
 }
 .black-text-in-a-white-box{
-    outline-color: whitesmoke;
     color: #121212;
-}
+    border: 3px solid whitesmoke;
+    background-color: whitesmoke;
+    width: 40%;
+    height: 140%;
+ }
 .on-dark-backgrounds{
     color: whitesmoke;
 }
