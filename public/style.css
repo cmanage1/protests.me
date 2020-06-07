@@ -36,3 +36,21 @@ img {
   margin-left: 15px;
   margin-top: -120px;
 }
+
+@media (max-width: 56.25em){
+	body{
+		background-size: cover;
+		background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+	}
+
+	.mobile-hide h1{
+		font-size: 2px;
+		width: 10%;
+		
+	}
+	img{
+		display: block;
+	}
+}
