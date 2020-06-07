@@ -1,5 +1,7 @@
 # ProtestApp
 
+Created for HackTheNorthEast 2020 Hackathon
+
 ## Stack
 
 Frontend
@@ -12,3 +14,5 @@ Backend/DevOps
 * Firebase Deployement
 * Firebase Authentication
 * Firestore Database
+
+[Devpost](https://devpost.com/software/protest-app)
