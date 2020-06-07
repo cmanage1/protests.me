@@ -6,8 +6,6 @@ var place = "";
 var description = "";
 var participants = 0;
 
-var data={}
-
 form.onsubmit= function(e) {
 
     e.preventDefault();
@@ -16,14 +14,12 @@ form.onsubmit= function(e) {
     date = document.getElementById('date').value;
     participants = document.getElementById('participants').value;
     description = document.getElementById('description').value;
-    
 
     const firebase = require("firebase");
 
     // Required for side-effects
     require("firebase/firestore");
     var db = firebase.firestore();
-
 
     db.collection("protests").add({
         title: title,
