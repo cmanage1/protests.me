@@ -1,6 +1,6 @@
 # ProtestApp
 
-##Stack
+## Stack
 
 Frontend
 * JavaScript
