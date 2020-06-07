@@ -48,12 +48,13 @@ img {
 }
 
 .main-index-logo{
+	display: block;
 	float: right;
 }
 
 
 
-@media (max-width: 56.25em){
+@media only screen and (max-width: 600px){
 	body{
 		background-size: cover;
 		background-position: center center;
@@ -62,8 +63,9 @@ img {
 	}
 
 	.rotating-text{
-		width: 50%;
+		width: 25%;
 	}
+	
 	
 	span{
 		font-size: 25px;
